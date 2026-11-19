@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Friday Night Funkin': Rhythmic Revolution</title>
+	
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	<link rel="shortcut icon" type="image/png" href="./favicon.png">
+	
+	<!-- Core Game Scripts -->
+	<script type="text/javascript" src="./lib/fengari-web.js"></script>
+	<script type="text/javascript" src="./lib/web-canvas.js"></script>
+	<script type="text/javascript" src="./RhythmicRevolution.js"></script>
+	
+	<script>
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
+	</script>
+	
+	<style>
+		html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000000; }
+		#openfl-content { width: 100%; height: 100%; }
+	</style>
+</head>
+<body>
+	<div id="openfl-content"></div>
+	
+	<script type="text/javascript">
+		// Starts the game immediately without external wrapper delays
+		lime.embed ("RhythmicRevolution", "openfl-content", 1280, 720, { parameters: {} });
+	</script>
+</body>
+</html>
